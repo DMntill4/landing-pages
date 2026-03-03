@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 30px 30px;
+    box-sizing: border-box;
+}
+
+.contenedor-principal {
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.seccion-hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.descripcion-botanica {
+    margin-left: 2.5vw;
+    color: black;
+    width: 30vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: min(1vw, 24px) max(1vw, 18px);
+    z-index: 1;
+}
+
+.imagen-destacada-planta {
+    width: 27vw;
+    position: absolute;
+    right: 19vw;
+    top: 8vw;
+    z-index: 2;
+    filter: drop-shadow(5px 5px 20px rgba(0,0,0,0.5));
+}
+
+.adorno-circular-uno {
+    width: 10vw;
+    position: absolute;
+    right: 45vw;
+    top: 32vw;
+    z-index: 2;
+}
+
+.adorno-circular-dos {
+    position: absolute;
+    right: 10vw;
+    top: 12vw;
+    z-index: 2;
+}
+
+.forma-fondo-abstracta {
+    width: 35vw;
+    position: absolute;
+    right: 15vw;
+    top: 16vw;
+    z-index: 1;
+}
+
+.mancha-fondo-verde {
+    width: 32vw;
+    position: absolute;
+    top: 2vw;
+    border-top-left-radius: 35px;
+    left: 2vw;
+    z-index: 0;
+}
+
+.encabezado-bienestar {
+    margin-top: 10vw;
+    margin-left: 2.5vw;
+    width: 50vw;
+    color: black;
+    font-size: clamp(5px, 2vw, 25px);
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    z-index: 1;
+    font-style: normal;
+}
+
+.boton-agendar {
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    background-color: #333333;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 6px 6px 0 0 black;
+}
+
+.boton-agendar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 100px;
+}
+
+.contenedor-resenas {
+    margin-top: 10vw;
+    background-color: #ffffff;
+    color: black;
+    width: 95vw;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    border: solid 1px black;
+}
+
+.texto-resena p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: max(0.9vw, 5px);
+}
+
+.tarjeta-informativa {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.tarjeta-informativa img {
+    width: 10vw;
+    padding: 1vw 2vw;
+}

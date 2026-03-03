@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.contenedor-principal {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.seccion-informativa {
+    background-color: #f2f2f2;
+    width: 50%;
+    min-height: 80vh;
+    border-radius: 0 0 400px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 5% 60px 10%;
+    z-index: 2;
+}
+
+.encabezado-hero h1 {
+    font-family: "Lato", sans-serif;
+    font-size: clamp(32px, 4vw, 35px);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #333;
+}
+
+b {
+    color: #437223;
+    font-weight: 900;
+}
+
+.descripcion-hero {
+    margin: 25px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #555;
+    max-width: 400px;
+}
+
+.indicadores-exito {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.metrica-item h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    border-bottom: 3px solid #437223;
+    display: inline-block;
+}
+
+.metrica-item p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.boton-accion-principal {
+    background-color: #437223;
+    width: 220px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.boton-accion-principal a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: block;
+    line-height: 55px;
+    text-align: center;
+}
+
+.boton-accion-principal:hover {
+    background-color: #355a1c;
+    transform: scale(1.05);
+}
+
+.seccion-visual {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-hero-principal {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    z-index: 1;
+}
+
+.elemento-decorativo-circular {
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 0;
+}
+
+.bloque-testimonios {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+.tarjeta-resena {
+    position: relative;
+    margin-bottom: 3%;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-resena img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.cuerpo-resena p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .seccion-informativa {
+        width: 100%;
+        border-radius: 0 0 100px 0;
+        min-height: auto;
+        padding: 60px 10%;
+    }
+
+    .seccion-visual {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .imagen-hero-principal {
+        width: 70%;
+    }
+
+    .bloque-testimonios {
+        position: relative;
+        flex-direction: column;
+        left: 0;
+        width: 80%;
+        margin: 20px auto;
+        bottom: 0;
+    }
+}
