@@ -12,6 +12,7 @@ A través de los siguientes enlaces puede desplazarse por la documentación de e
   - [Índice de Landings](#índice-de-landings)
   - [Arquitectura de Archivos](#arquitectura-de-archivos)
   - [Estándares de Diseño](#estándares-de-diseño)
+  - [Repositorio Global](#repositorio-global)
 
 ---
 
@@ -64,3 +65,7 @@ La construcción de estas interfaces se ha regido por los siguientes principios 
 3. **Optimización**: Gestión eficiente de recursos externos y minimización de reglas redundantes en las hojas de estilo.
 
 ---
+
+## Repositorio Global
+
+* [text](https://github.com/TuMinipeka/LandingPageGlobal)
