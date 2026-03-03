@@ -68,4 +68,4 @@ La construcción de estas interfaces se ha regido por los siguientes principios 
 
 ## Repositorio Global
 
-* [text](https://github.com/TuMinipeka/LandingPageGlobal)
+* [Repositorio Global](https://github.com/TuMinipeka/LandingPageGlobal)
