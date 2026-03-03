@@ -37,14 +37,14 @@ body {
 }
 
 .main-title {
-    font-size: clamp(1rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 5vw, 4rem);
     color: #2b2b2b;
     font-weight: 800;
     line-height: 1.1;
 }
 
 .text-content {
-    font-size: clamp(0.9rem, 1.2vw, 1.4rem);
+    font-size: clamp(0.95rem, 1.2vw, 1.4rem);
     color: #444;
     line-height: 1.6;
     max-width: 480px;
@@ -57,7 +57,7 @@ body {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: clamp(0.85rem, 20vw, 1.1rem);
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem); /* corregido: era 20vw, un valor erróneo */
     font-weight: 100;
     transition: background-color 0.3s ease;
     white-space: nowrap;
@@ -88,7 +88,7 @@ body {
 }
 
 .stat-box span {
-    font-size: clamp(0.6rem, 0.8vw, 0.85rem);
+    font-size: clamp(0.65rem, 0.8vw, 0.85rem);
     color: #ccc;
     display: block;
     font-weight: 400;
@@ -96,7 +96,7 @@ body {
 }
 
 .stat-box img {
-    width: clamp(50px, 5vw, 80px);
+    width: clamp(40px, 5vw, 80px);
     height: auto;
     display: block;
     margin: 4px auto;
@@ -109,7 +109,7 @@ body {
     flex: 1;
     position: relative;
     z-index: 2;
-    left: -190px;
+    /* Eliminado: left: -190px — rompía el layout en pantallas medianas */
 }
 
 .main-img {
@@ -119,8 +119,8 @@ body {
     object-fit: contain;
 }
 
+/* ─── Tablet grande (max 1100px) ─── */
 @media (max-width: 1100px) {
-
     .main-container {
         padding: 50px 5vw;
         gap: 20px;
@@ -135,8 +135,8 @@ body {
     }
 }
 
+/* ─── Tablet (max 860px) ─── */
 @media (max-width: 860px) {
-
     .main-container {
         flex-direction: column;
         align-items: center;
@@ -159,6 +159,7 @@ body {
     .text-content {
         text-align: center;
         font-size: clamp(0.95rem, 2vw, 1.2rem);
+        max-width: 100%;
     }
 
     .stats-box {
@@ -168,6 +169,7 @@ body {
 
     .image-section {
         width: 100%;
+        left: 0; /* neutraliza el offset de escritorio */
     }
 
     .main-img {
@@ -176,10 +178,10 @@ body {
     }
 }
 
+/* ─── Mobile (max 560px) ─── */
 @media (max-width: 560px) {
-
     .main-container {
-        padding: 40px 4vw;
+        padding: 40px 5vw;
     }
 
     .main-title {
@@ -194,15 +196,46 @@ body {
         width: 100%;
         max-width: 280px;
         text-align: center;
+        white-space: normal; /* permite wrap en móvil si el texto es largo */
     }
 
     .stats-box {
         flex-direction: column;
+        align-items: stretch;
         gap: 14px;
+        padding: 24px 16px;
+    }
+
+    .stat-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .stat-box img {
+        width: 40px;
+        flex-shrink: 0;
     }
 
     .main-img {
         width: 85%;
         max-width: 280px;
+    }
+}
+
+/* ─── Mobile pequeño (max 380px) ─── */
+@media (max-width: 380px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .main-button {
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+
+    .stats-box {
+        padding: 16px 12px;
     }
 }
